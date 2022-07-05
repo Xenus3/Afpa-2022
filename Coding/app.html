@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+    <style>
+      .head {
+        background-color: lightblue;
+        font-size: 50px;
+        text-align: center;
+        height: 150px;
+        padding: 20px;
+
+      }
+      input[type="button"] {
+        background-color: pink;
+      }
+    </style>
+    <script>
+      function addItem() {
+        var newItem = document.createElement("div");
+        newItem.innerHTML = document.getElementById("box").value;
+        newItem.onclick = removeItem;
+        document.getElementById("list").appendChild(newItem);
+        saveList();
+      }
+      function removeItem() {
+        document.getElementById("list").removeChild(this);
+        saveList();
+      }
+      function saveList() {
+        localStorage.storedList = document.getElementById("list").innerHTML;
+      }
+      function loadList() {
+        document.getElementById("list").innerHTML = localStorage.storedList;
+        for(var i = 0; i < list.children.length; i++) {
+          list.children[i].onclick = removeItem;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="head">
+      <p>The House of Volkov</p>
+
+    </div>
+    <div>
+      <p>Special Exhibition To-Do List</p>
+      <input id="box" type="text" value="type here to add task"/><br/>
+      <input type="button" value="Add item" onclick="addItem();"/><br/>
+      <div id="list"></div>
+      <script>
+        if(localStorage.storedList) {
+          loadList();
+        }
+      </script>
+    </div>
+  </body>
+</html>

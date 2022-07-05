@@ -1,0 +1,66 @@
+.parent01 {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: auto;
+}
+
+.parent02 {
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    height: auto;
+}
+
+
+li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 25px;
+    vertical-align: bottom;
+    
+   
+}
+
+#afpa-img {
+   
+    height:100px ;
+    
+}
+
+.navbar-nav {
+    text-align: right;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    height: 50px;
+    background-color: black;
+    color:white;
+    font-size: 50px;
+}
+
+form {
+    background-color: aqua;
+    height: auto;
+    display: inline-block;
+    width: 100%
+}
+
+input {
+    margin: 10px;
+    margin-top: 30px;
+    width: 500px;
+    height: 30px;
+}
+
+p {
+    
+    font-weight: bold;
+    font-size: 30px;
+
+}
