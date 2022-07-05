@@ -1,0 +1,282 @@
+
+header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width:100%;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+
+}
+
+.name {
+    
+    background-color: lightblue;
+    border: black 2px solid;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+
+}
+
+nav {
+    border: black 2px solid;
+    
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+
+li {
+    display: inline;
+    font-size: 25px;
+    float: right;
+    text-align: center;
+    padding: 20px;
+    
+    
+}
+
+
+.content {
+    display:flex;
+}
+
+
+
+.photo {
+    height: 100%;
+    width: 100%;
+    
+    object-fit: cover;
+}
+
+.a1 {
+    width: 40%;
+    border: black 3px solid;
+    
+}
+
+.a2 {
+    display: grid;
+    grid-template-rows: 90% 10%;
+    width: 30%;
+    border: black 3px solid;
+    text-align: center;
+    
+}
+
+.a2-1 {
+    padding: 30px;
+}
+
+.a3 {
+    width: 30%;
+    border: black 3px solid;
+    
+}
+
+.photo2 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info {
+    display:flex;
+    
+}
+
+.b1 {
+    
+    background-image: url("assets/img/Coding.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 30%;
+    border: black 3px solid; 
+    text-align: center;
+    height: 500px;
+}
+
+
+    
+
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.link {
+    position:absolute;
+    bottom: 4px;
+    left : 10px;
+    
+    
+}
+
+.b2 {
+    
+    width: 40%;
+    border: black 3px solid;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.contenu {
+    width: 100%;
+    height: 80%;
+    text-align: center;
+}
+
+.link2 {
+    
+    text-align: center;
+}
+
+.b3 {
+    width: 30%;
+    border: black 3px solid;
+}
+
+.pet {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.education {
+    display: flex;
+
+}
+
+.etudes {
+    width: 35%;
+    border: black solid 3px;
+    height: 500px;
+    text-align: center;
+    padding: 40px;
+    background-color: blanchedalmond;
+}
+
+.image3 {
+    width: 35%;
+    border: black solid 3px;
+}
+
+.img3 {
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+}
+
+.competences {
+    width: 30%;
+    border: black 3px solid;
+    background-color: black;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    width: 100%;
+   
+    
+}
+
+.facebook {
+    
+    border: black solid 2px;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+
+.github {
+    
+    border: black solid 2px;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.linkedin {
+    
+    border: black solid 2px;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+
+form {
+    height: 100%;
+    background-color: aqua;
+    padding: 30px;
+    
+
+}
+
+
+
+#commentaire {
+    box-sizing: border-box ;
+
+}
+
+.f-img {
+    object-fit: cover;
+    height: 50px;
+    width: 100%;
+    
+}
+
+H1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    height: 50px;
+    margin: 0;
+    padding: 20px;
+}
+
+#git-img {
+    object-fit: cover;
+    height: 50px;
+    width: 100%;
+    
+}
+
+#LI-img {
+    object-fit: cover;
+    height: 50px;
+    width: 100%;
+}

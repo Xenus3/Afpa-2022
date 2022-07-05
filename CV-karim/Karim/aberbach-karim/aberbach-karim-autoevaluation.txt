@@ -1,0 +1,6 @@
+Html - 6
+Css - 5
+Git - 0 (jamais utilisé mais je sait que c'est une platforme de freelancing)
+Javascript - 3 (je vient de commencer, j'ai deja utilisé des fonctions et les documents object models pour modifier les pages web)
+bootstrap - 0 ( je connaisait pas )
+Jquery - 0 ( je connait pas )
