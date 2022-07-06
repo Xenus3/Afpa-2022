@@ -1,0 +1,33 @@
+#block1 {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+}
+
+#block2 {
+   background-color: white;
+   font-size: 30px;
+   text-align: right;
+
+}
+
+li {
+    display:inline;
+    padding: 15px;
+    
+}
+
+ul {
+    padding-top: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+#photo {
+    object-fit: cover;
+    height:100%;
+    width:100%;
+}
