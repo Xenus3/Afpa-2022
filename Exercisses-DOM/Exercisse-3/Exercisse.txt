@@ -1,0 +1,15 @@
+A FAIRE:
+
+1-Lorsque la boite "Masquer les paroles" est cochée, masquez tout les paroles et modifiez l'intitulé en "Afficher les paroles"
+2-Lorsque la boite "Masquer les refrains" est cochée, remplacez tous les refrains sauf le premier par [Refrain], et modifiez l'intitulé de la boite en "Afficher les refrains"
+3-Lorsque les refrains sont masqués. Le du survol de [Refrain] affiche le contenu du refrain :Exemple avec les paroles masquées
+
+ASTUCES:
+
+Si quand les cases sont cochées les éléments sont masquées avec succes, mais rappellez vous qu'il doit aussi être possible de les afficher à nouveau.
+Utilisez element.addEventListener()ref pour attacher une évènement à un element.
+Utilisez l'évènement click pour savoir quand la case est cochée.
+Pour connaitre l'état de la case (cochée ou non), utiliser l'attribut checkedref.
+Utilisez l'évènement mouseenterref pour savoir quand la souris survole l'element et mouseleaveref pour savoir quand la souris ne le survole plus.
+Vous avez du mal à masquer les elements ? La classe hidden n'est pas là par hasard.
+Notez que [Refrain] est déjà présent dans index.html, peut être qu'il est possible de les remplacer seulement de manière visuelle (sans avoir a supprimer du texte).

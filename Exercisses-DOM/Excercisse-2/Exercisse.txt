@@ -1,0 +1,14 @@
+A FAIRE :
+
+1-Supprimez la classe red.
+2-Mettez en italique tous les refrains.
+3-La couleur de la classe blue est trop forte, trouvez un moyen de mettre une couleur blue plus douce (#8A2BE2, #6495ED par exemple).
+Avez vous réussi a ne pas laisser d'espaces blancs entre chaque paragraphe ?
+
+ASTUCES :
+
+Utilisez l'attribut classListref d'un element afin de manipuler les classes de cet objet.
+Vous ne pouvez pas modifier le css, mais vous pouvez ajouter l'attribut styleref en utilisant setAttribute()ref par exemple.
+Il est aussi possible de directement manipuler les styles via une APIref.
+Il y a un moyen d'ajouter la couleur d'arrière plan à l'ensemble des paroles... .
+var lines
