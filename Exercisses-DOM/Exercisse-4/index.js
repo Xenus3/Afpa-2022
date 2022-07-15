@@ -34,3 +34,11 @@ function paragraphes() {
 }
 
 paragraphes();
+
+function footer() {
+    var foot = document.createElement("footer");
+    document.body.appendChild(foot);
+    foot.innerHTML = `© Copyright 2020 - IUT`;
+}
+
+footer();
