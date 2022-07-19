@@ -1,0 +1,25 @@
+A FAIRE :
+
+1-Selectionnez le premier fils de l'élèment body et modifiez son contenu en Rick Astley - Never Gonna Give You Up.
+2-Sélectionnez tous les éléments possèdant la classe couplet et supprimer la première ligne qui est en double.
+N'oubliez pas de supprimer le <br /> qui cause le retour à la ligne
+3-Le refrain s'est dupliqué à cause de l'écho. Supprimez les occurences en double.
+N'oubliez pas de supprimer le <br /> qui cause le retour à la ligne
+4-Maintenant que toutes les erreurs ont été corrigées, supprimer l'élément ayant pour id erreur
+5-Ajoutez en bas de la page (dernier element de <body>), un <footer> contenant © Copyright 2020 - Nom
+
+ASTUCES :
+
+Utilisez firstElementChildref pour sélectionner le premier Element d'un Node.
+Utilisez firstChildref pour sélectionner le premier Node d'un Node.
+Utilisez childNodesref pour sélectionner les sous-Nodes d'un Node.
+Utilisez document.getElementById("un_id")ref pour récuperer un élément ayant pour id un_id.
+Pour sélectionner tous les éléments qui possèdent une classe, utilisez document.getElementsByClassName
+("nom_classe")ref ou document.querySelectorAll(".nom_classe")ref
+Attention, ces fonctions retournent un tableau.
+Utilisez parent.removeChild(enfant)ref afin de supprimer un élément enfant d'un élément parent.
+Faites attention lorsque vous modifiez les elements d'une liste lors de son parcours.
+Utilisez parent.appendChild(child)ref pour ajouter un element.
+Attention, appendChild n'accepte que des Node. Il faut donc les créer, ce qui peut se faire 
+avec document.createElement()ref pour créer un Element et document.createTextNode
+("un texte")ref pour créer un noeud de type Text contenant un texte.
