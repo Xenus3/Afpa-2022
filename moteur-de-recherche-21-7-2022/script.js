@@ -1,12 +1,13 @@
 function chercherOccurence() {
 var text = document.getElementById("text-area").innerText;
 var input = document.getElementById("search").value;
-var rege = new RegExp(input, "g");
-var occurences = text.match(rege);
-document.getElementById('result').innerText = occurences;
-var underLine = document.getElementById('result').classList;
-underLine.add('souligner');
 
+if(input!="") {
+    var expReg = new RegExp(input, "ig");
+    var nouvelForm = "<span style='background-color:red;'>"+ input +"</span>";
+    text = text.replace(expReg,nouvelForm);
+    document.getElementById("text-area").innerHTML = text;
 }
 
 
+}
