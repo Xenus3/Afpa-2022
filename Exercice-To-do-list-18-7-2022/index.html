@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <script src ="script.js"></script>
+    </head>
+    <body>
+        <h1>TO-DO-LIST</h1>
+        <p>Liste a faire :</p>
+        <div id = "form">
+          <label pour="boite">Tache a rajouter:</label>
+          <input type="text" id="boite">
+          <input type="button" Value="Ajoutez une Tache" onclick="ajoutezTache();"><br>
+          <ol id="liste"></ol>
+        </div>
+        
+    </body>
+    <script>
+        if(localStorage.sauver) {
+          chargerList();
+         }
+      </script>
+</html>
