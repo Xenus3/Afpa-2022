@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <form action="formulaire.php" method="POST" >
+        <label for="email">Saisissez votre Mail :</label>
+        <input type="text" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br><!--matchez des lettres en minuscule, des chiffres ou des symboles, 1 ou plusieurs occurences de chaque, avec un arobase, suivis par des lettres en minuscule, des chiffres ou un tiret, 1 ou plusieurs occurence de chaque, suivis par un point, et en fin des lettres en minuscules, 2 occurences ou plus-->
+        <label for="date">Saisissez votre Date de Naissance :</label>
+        <input type="text" name="date" id="date"  required pattern="[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}"><br><br><!--matchez des chiffres, un a deux occurences, avec un slash entre les deux, matchez des chiffres un a deux occurences, avec un slash entre les deux, matchez des chiffres 4 occurences-->
+        <label for="mdp">Saisissez votre Mot de Passe :</label>
+        <input type="password" name="mdp" id="mdp" required pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z]){8,16}$"><br><br><!--matchez n'importe quel character n'importe que nombre de fois pour les chiffres, les lettres minuscule, les lettres majuscule, et faire ca entre 8 et 16 occurences-->
+        <input type="submit" id="boutton" value="Soumettre" ><!--soumet le formulaire-->
+
+
+    </form>
+    
+</body>
+</html>
