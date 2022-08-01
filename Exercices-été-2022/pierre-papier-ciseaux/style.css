@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    height: 100px;
+    background-color: rgb(36, 184, 16);
+    padding-top: 25px;
+}
+
+#result {
+    text-align: center;
+    margin: 40px 260px;
+    padding: 20px;
+    background-color: rgb(159, 6, 6);
+    border: 1px solid black;
+}
+
+#form {
+    margin-top: 50px;
+    font-size: 20px;
+}
