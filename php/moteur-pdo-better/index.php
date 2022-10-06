@@ -1,6 +1,6 @@
 <?php 
 $bdd = new PDO('mysql:host=localhost;dbname=vroomissimo', 'root', 'Lens2022!');
-$query = 'select * from voiture';
+$query = 'SELECT * from voiture';
 $allcars = $bdd->query($query);
 if(isset($_GET['s']) AND !empty($_GET['s'])) {
     $recherche = htmlspecialchars($_GET['s']);
