@@ -4,9 +4,7 @@ $query = 'select * from voiture';
 $allcars = $bdd->query($query);
 if(isset($_GET['s']) AND !empty($_GET['s'])) {
     $recherche = htmlspecialchars($_GET['s']);
-    $allcars = $bdd->query( 'select * from voiture where marque like "%'.$recherche.'%"
-    or modele like "%'.$recherche.'%"
-    or carburant like "%'.$recherche.'%"');
+    $allcars = $bdd->query( 'SELECT * from voiture where concat(marque, modele, carburant) like "%'.$recherche.'%"');
 }
 ?>
 <!DOCTYPE html>
