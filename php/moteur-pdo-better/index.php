@@ -65,13 +65,7 @@ if(isset($_GET['s']) or isset($_GET['carburant']) or isset($_GET['modele'])) {
                     ?>
                     
                     
-                    <!--/*echo "<tr><td>".$voiture['marque']."</td>
-                    <td>".$voiture['modele']."</td>
-                    <td>".$voiture['prix']."</td>
-                    <td>".$voiture['kilometrage']."</td>
-                    <td>".$voiture['carburant']."</td>
-                    <td>".$voiture['carroserie']."</td>
-                    <td></td></tr>\n";*/-->
+                   
                     <tr><td><?= $voiture['marque'] ?></td>
                     <td><?=  $voiture['modele'] ?></td>
                     <td><?=  $voiture['prix'] ?></td>
