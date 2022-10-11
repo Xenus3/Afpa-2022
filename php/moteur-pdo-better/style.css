@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+}
+
+
+/* Bordure simple autour des tableaux */
+
+table{border-collapse:collapse;}
+/* Centrage tableau */
+table.centre{ margin:auto;}
+/* centrage du texte dans les cellules du tableau */
+table.centre td{text-align:center;}
+
+table#jolie tr:first-child{
+	background:#6D65E0;
+}
+table#jolie tr:nth-child(2n){
+	background:lightblue;
+}
+table#jolie tr:nth-child(2n+3){
+	background:#BCBCD0;
+}
+/* si un tableau a une seule ligne on l'affiche en rouge */
+table tr:only-child{
+	background:lightblue;
+}
+
+ form {
+    text-align: center;
+    background-color: #0913E6;
+    padding : 50% auto;
+	/*height: 200px;*/
+}
+
+body form a  {
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+	background: gray;
+	padding: 10px;
+}
+
+h1.titre {
+	text-align: center;
+	background-color:#E64800;
+	background-image: url('https://www.fastnclassic.com/wp-content/uploads/2022/06/HOME-3-1920x715.jpg');
+	height: 500px;
+	color: white;
+}
+
+div.formulaire  {
+	height:200px;
+	margin: auto;
+	width: 300px;
+}
+
+body {
+	
+	
+	
+	background-position: center;
+	height: 100%;
+	width: 100%;
+
+}
