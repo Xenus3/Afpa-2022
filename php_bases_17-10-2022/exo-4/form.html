@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Un petit formulaire (pour commencer)</h1>
+    <p>Merci de renseigner les information suivantes:</p>
+    <form method="GET" action="form.php">
+        <label for="nom">Votre nom :</label>
+        <input type="text" name="nom"><br>
+        <label for="age">Votre age :</label>
+        <input type="text" name="age"><br>
+        <label for="situation">Votre situation maritale :</label>
+        <input type="radio" name="situation" value="Marié" id="marié">
+        <label for="marié">Marié</label>
+        <input type="radio" name="situation" value="Veuf(ve)" id="veuve">
+        <label for="marié">Veuf(ve)</label>
+        <input type="radio" name="situation" value="Célibataire" id="celibataire">
+        <label for="celibataire">Célibataire</label><br>
+        <label for="interet1">Vos centres d'interet :</label>
+        <input type="checkbox" id="interet1" name="interet1" value="Internet">
+        <label for="interet1">Internet</label>
+        <input type="checkbox" id="interet2" name="interet2" value="Micro-informatique">
+        <label for="interet2">Micro-informatique</label>
+        <input type="checkbox" id="interet3" name="interet3" value="Jeux Vidéo">
+        <label for="interet3">Jeux Vidéo</label><br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Recommencer">
+    </form>
+</body>
+</html>
