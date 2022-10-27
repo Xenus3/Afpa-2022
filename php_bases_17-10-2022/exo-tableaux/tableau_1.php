@@ -24,7 +24,7 @@ $longueur = count($etudiants);
 
 
 echo "<table>";
-echo "<th>Nom</th><th>Prenom</th>";
+echo "<th>Nom</th><th>Note</th>";
 foreach($etudiants as $cle => $valeur) {
     echo "<tr><td>$cle</td><td>$valeur</td></tr>";
 }
