@@ -18,10 +18,8 @@
 <?php
 
 $etudiants = array("jimmy"=>15, "halim"=>15, "greg"=>15, "cedric"=>15, "anthony"=>15, "oceane"=>15, "perrine"=>15, "fred"=>15);
+
 ksort($etudiants);
-
-$longueur = count($etudiants);
-
 
 echo "<table>";
 echo "<th>Nom</th><th>Note</th>";
