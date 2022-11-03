@@ -6,9 +6,11 @@ table, th, td {
 }
 
 th {
-    background-color:green;  
+    background-color:green;
+    height: 50px;  
 }
 
 td {
     color: green;
+    height: 25px;
 }

@@ -21,9 +21,28 @@ $etudiants = array("jimmy"=>15, "halim"=>15, "greg"=>15, "cedric"=>15, "anthony"
 
 ksort($etudiants);
 
-echo "<table>";
+/*echo "<table>";
 echo "<th>Nom</th><th>Note</th>";
 foreach($etudiants as $cle => $valeur) {
     echo "<tr><td>$cle</td><td>$valeur</td></tr>";
 }
-echo "</table>";
+echo "</table>";*/
+
+echo <<<html
+        <table>
+        <th>Nom</th><th>Note</th>
+        html;
+
+foreach($etudiants as $cle => $valeur) {
+    echo <<<html
+            <tr><td>{$cle}</td><td>{$valeur}</td></tr>
+            html;
+}
+
+echo <<<html
+        </table>
+        html;
+
+
+
+      
