@@ -22,7 +22,7 @@ if(isset($_GET['s']) or isset($_GET['carburant']) or isset($_GET['modele'])) {//
     if(!empty($modele)) {
         $conditions[] = 'modele like "%'.$modele.'%"';
     }
-    // si une des zones n'est pas vide on ajoute la chaine de character correspondante a la requete SQL initiale
+    // si une des zones de recherche n'est pas vide on concatene la chaine de character correspondante a la requete SQL initiale
     $sql = $query;
     if (count($conditions) > 0) {
       $sql .= " WHERE " . implode(' AND ', $conditions);
