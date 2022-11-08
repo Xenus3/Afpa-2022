@@ -1,0 +1,97 @@
+CREATE TABLE localisation(
+   id_localisation INT AUTO_INCREMENT,
+   ville VARCHAR(50) ,
+   pays VARCHAR(50) ,
+   PRIMARY KEY(id_localisation)
+);
+
+CREATE TABLE vendeur(
+   id_vendeur INT AUTO_INCREMENT,
+   type_vendeur VARCHAR(50) ,
+   nom VARCHAR(50) ,
+   prenom VARCHAR(50) ,
+   telephone VARCHAR(20) ,
+   PRIMARY KEY(id_vendeur)
+);
+
+CREATE TABLE bonne_affaire(
+   id_bonne_affaire INT AUTO_INCREMENT,
+   niveau VARCHAR(50) ,
+   PRIMARY KEY(id_bonne_affaire)
+);
+
+CREATE TABLE equipement(
+   id_equipement INT AUTO_INCREMENT,
+   nom_equipement VARCHAR(50) ,
+   category_equipment VARCHAR(50) ,
+   PRIMARY KEY(id_equipement)
+);
+
+CREATE TABLE garantie(
+   id_garantie INT AUTO_INCREMENT,
+   longueur_garantie VARCHAR(50) ,
+   PRIMARY KEY(id_garantie)
+);
+
+CREATE TABLE caracteristiques_technique(
+   id_caracteristiques_technique INT AUTO_INCREMENT,
+   nom_caracteristique VARCHAR(50) ,
+   valeur_caracteristique VARCHAR(50) ,
+   PRIMARY KEY(id_caracteristiques_technique)
+);
+
+CREATE TABLE voiture(
+   id_voiture INT AUTO_INCREMENT,
+   marque VARCHAR(50) ,
+   modele VARCHAR(50) ,
+   annee_modele INT,
+   mise_en_circulation DATE,
+   carroserie VARCHAR(50) ,
+   kilometrage VARCHAR(50) ,
+   carburant VARCHAR(50) ,
+   couleur VARCHAR(50) ,
+   prix DECIMAL(19,4),
+   id_garantie INT,
+   id_bonne_affaire INT NOT NULL,
+   id_vendeur INT,
+   id_localisation INT NOT NULL,
+   PRIMARY KEY(id_voiture),
+   FOREIGN KEY(id_garantie) REFERENCES garantie(id_garantie),
+   FOREIGN KEY(id_bonne_affaire) REFERENCES bonne_affaire(id_bonne_affaire),
+   FOREIGN KEY(id_vendeur) REFERENCES vendeur(id_vendeur),
+   FOREIGN KEY(id_localisation) REFERENCES localisation(id_localisation)
+);
+
+CREATE TABLE photos(
+   id_photos INT AUTO_INCREMENT,
+   nom_photo VARCHAR(50) ,
+   lien VARCHAR(100) ,
+   id_voiture INT NOT NULL,
+   PRIMARY KEY(id_photos),
+   FOREIGN KEY(id_voiture) REFERENCES voiture(id_voiture)
+);
+
+CREATE TABLE description(
+   id_description INT AUTO_INCREMENT,
+   description TEXT,
+   id_voiture INT NOT NULL,
+   PRIMARY KEY(id_description),
+   UNIQUE(id_voiture),
+   FOREIGN KEY(id_voiture) REFERENCES voiture(id_voiture)
+);
+
+CREATE TABLE Contenir(
+   id_voiture INT,
+   id_equipement INT,
+   PRIMARY KEY(id_voiture, id_equipement),
+   FOREIGN KEY(id_voiture) REFERENCES voiture(id_voiture),
+   FOREIGN KEY(id_equipement) REFERENCES equipement(id_equipement)
+);
+
+CREATE TABLE Avoir(
+   id_voiture INT,
+   id_caracteristiques_technique INT,
+   PRIMARY KEY(id_voiture, id_caracteristiques_technique),
+   FOREIGN KEY(id_voiture) REFERENCES voiture(id_voiture),
+   FOREIGN KEY(id_caracteristiques_technique) REFERENCES caracteristiques_technique(id_caracteristiques_technique)
+);
